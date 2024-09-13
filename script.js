@@ -8,7 +8,7 @@ const peticionApi = (pokemon) => {
     const baseURL = 'https://pokeapi.co/api/v2/';
     const endpoint = `pokemon/${pokemon}`;
     const url = `${baseURL}${endpoint}`;
-
+  
     axios.get(url)
         .then((res) => printData(res.data))  // Si la petición es exitosa, mostramos los datos
         .catch((err) => {
