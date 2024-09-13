@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./Estilos.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body id="pokedex-container">
+    <h1>Pokédex</h1>
+
+    <!-- Cuadro de entrada para buscar Pokémon -->
+    <div id="input-section">
+        <input type="text" name="input_pokemon" id="input_pokemon" placeholder="Nombre o ID del Pokémon">
+        <button id="button_search" onclick="obtenervalorInput()">Buscar</button>
+    </div>
+
+    <!-- Cuadro de información del Pokémon -->
+    <div id="pokemon-display">
+        <div id="screen">
+            <h3>Información del Pokémon</h3>
+            <div id="show-info"></div>
+        </div>
+    </div>
+</body>
+</html>
